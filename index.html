@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bookblock.css" />
+        <link rel="stylesheet" type="text/css" href="default.css">
+
+        <script src="modernizr.custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="jquerypp.custom.js"></script>
+        <script src="jquery.bookblock.js"></script>
+        <script src="plugin.js"></script>
+        <script src="connect-bluetooth.js"></script>
+    </head>
+    <body>
+        <div class = "bluetooth">
+            <br><div>マイクロビット Bluetooth接続ボタン</div>
+            <input type="button" value="接続する" onclick="pushStart()" />
+            <input type="button" value="操作を止める" onclick="pushStop()" />
+            <input type="button" value="再接続する" onclick="pushRestart()" />
+            <input type="button" value="切断する" onclick="disconnect()" />
+        </div>
+        <br>
+       
+        <div id="bb-bookblock" class="bb-bookblock">
+            <div class="bb-item">
+                <!-- custom content -->
+                <div><img src = "" alt = "" class="aligncenter"></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <div class="bb-item">
+                <!-- ... -->
+                <div></div>
+            </div>
+            <!-- ... -->
+        </div>
+        <br>
+        <nav class = "nav">
+        <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first"><span>FirstPage</span></a>
+        <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-left"><span>Previous</span></a>
+        <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-right"><span>Next</span></a>
+        <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last"><span>LastPage</span></a>
+        </nav>
+        <div id = "buttonA"></div>
+    </body>
+</html>
